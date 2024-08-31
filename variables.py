@@ -1,15 +1,8 @@
 # https://github.com/Infamous-Hydra/YaeMiko
 # https://github.com/Team-ProjectCodeX
 
-
-import json
 import os
-
-
-def get_user_list(config, key):
-    with open("{}/Mikobot/{}".format(os.getcwd(), config), "r") as json_file:
-        return json.load(json_file)[key]
-
+import json
 
 class Config(object):
     # Configuration class for the bot
@@ -19,31 +12,31 @@ class Config(object):
 
     # <================================================ REQUIRED ======================================================>
     # Telegram API configuration
-    API_ID = 204 # Get this value from my.telegram.org/apps
-    API_HASH = ""
+    API_ID = 6433468  # Get this value from my.telegram.org/apps
+    API_HASH = "7895dfd061f656367ccab30032"
 
     # Database configuration (PostgreSQL)
-    DATABASE_URL = "postgres:"
+    DATABASE_URL = "postgres://pliimhmp:x_jRdB_KoO9xlWW1kA0vkRRDcDb8eD8P@rogue.db.elephantsql.com/pliimhmp"
 
     # Event logs chat ID and message dump chat ID
-    EVENT_LOGS = -100
-    MESSAGE_DUMP = -100
-
+    EVENT_LOGS = -1002203667956
+    MESSAGE_DUMP = -1002203667956
+    
     # MongoDB configuration
-    MONGO_DB_URI = ""
+    MONGO_DB_URI = "mongodb+srv://tiwarireeta004:peqxLEd36RAg7ors@cluster0.furypd3.mongodb.net/?retryWrites=true&w=majority"
 
     # Support chat and support ID
-    SUPPORT_CHAT = ""
-    SUPPORT_ID = -100
+    SUPPORT_CHAT = "https://t.me/ApeX_Chats"
+    SUPPORT_ID = -1002203667956
 
     # Database name
-    DB_NAME = ""
+    DB_NAME = "TojiDB"
 
     # Bot token
-    TOKEN = ""  # Get bot token from @BotFather on Telegram
+    TOKEN = "6638407849:AAETj6U7bNXJuDTmLWTYL8SuTzl2igXFNlE"  # Get bot token from @BotFather on Telegram
 
     # Owner's Telegram user ID (Must be an integer)
-    OWNER_ID = 5907205317
+    OWNER_ID = 5758713974
     # <=======================================================================================================>
 
     # <================================================ OPTIONAL ======================================================>
@@ -53,11 +46,11 @@ class Config(object):
     BL_CHATS = []
 
     # User IDs of sudo users, dev users, support users, tiger users, and whitelist users
-    DRAGONS = get_user_list("elevated_users.json", "sudos")
-    DEV_USERS = get_user_list("elevated_users.json", "devs")
-    DEMONS = get_user_list("elevated_users.json", "supports")
-    TIGERS = get_user_list("elevated_users.json", "tigers")
-    WOLVES = get_user_list("elevated_users.json", "whitelists")
+    DRAGONS = []  # Sudo users
+    DEV_USERS = []  # Dev users
+    DEMONS = []  # Support users
+    TIGERS = []  # Tiger users
+    WOLVES = []  # Whitelist users
 
     # Toggle features
     ALLOW_CHATS = True
@@ -71,9 +64,6 @@ class Config(object):
 
     # Global ban settings
     STRICT_GBAN = True
-    BAN_STICKER = (
-        "CAACAgUAAxkBAAEGWC5lloYv1tiI3-KPguoH5YX-RveWugACoQ4AAi4b2FQGdUhawbi91DQE"
-    )
 
     # Temporary download directory
     TEMP_DOWNLOAD_DIRECTORY = "./"
