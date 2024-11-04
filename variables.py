@@ -19,31 +19,31 @@ class Config(object):
 
     # <================================================ REQUIRED ======================================================>
     # Telegram API configuration
-    API_ID = 204 # Get this value from my.telegram.org/apps
-    API_HASH = ""
+    API_ID = 24074986 # Get this value from my.telegram.org/apps
+    API_HASH = "f4f6272a85d0e50e39a24cb378be118d"
 
     # Database configuration (PostgreSQL)
-    DATABASE_URL = "postgres:"
+    DATABASE_URL = "postgres://lcutclrp:Nj5f0OjOliDuseAwF9ltSwVTQ8ssLt8Q@flora.db.elephantsql.com/lcutclrp"
 
     # Event logs chat ID and message dump chat ID
-    EVENT_LOGS = -100
-    MESSAGE_DUMP = -100
+    EVENT_LOGS = -1002058944399
+    MESSAGE_DUMP = -1002058944399
 
     # MongoDB configuration
-    MONGO_DB_URI = ""
+    MONGO_DB_URI = "mongodb+srv://vikashgup87:EDRIe3bdEq85Pdpl@cluster0.pvoygcu.mongodb.net/?retryWrites=true&w=majority"
 
     # Support chat and support ID
-    SUPPORT_CHAT = ""
-    SUPPORT_ID = -100
+    SUPPORT_CHAT = "zbbzxce"
+    SUPPORT_ID = -1002058944399
 
     # Database name
-    DB_NAME = ""
+    DB_NAME = "VikashGuptaDB"
 
     # Bot token
-    TOKEN = ""  # Get bot token from @BotFather on Telegram
+    TOKEN = "7066474569:AAEVMPnZwa6UQGTDBFhM31A989yvokgJtR8"  # Get bot token from @BotFather on Telegram
 
     # Owner's Telegram user ID (Must be an integer)
-    OWNER_ID = 5907205317
+    OWNER_ID = 5758713974
     # <=======================================================================================================>
 
     # <================================================ OPTIONAL ======================================================>
