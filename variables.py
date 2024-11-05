@@ -23,7 +23,7 @@ class Config(object):
     API_HASH = "f4f6272a85d0e50e39a24cb378be118d"
 
     # Database configuration (PostgreSQL)
-    DATABASE_URL = "postgres://pliimhmp:x_jRdB_KoO9xlWW1kA0vkRRDcDb8eD8P@rogue.db.elephantsql.com/pliimhmp"
+    DATABASE_URL = "postgresql://Neondb_owner:CUfbBnXYW46u@ep-dry-pond-a560fpvi.us-east-2.aws.neon.tech/Neondb?sslmode=require"
 
     # Event logs chat ID and message dump chat ID
     EVENT_LOGS = -1002058944399
